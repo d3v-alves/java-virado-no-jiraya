@@ -8,6 +8,6 @@ public class PrimitiveTypeExercise {
         String dateOfSalaryPayment = "05/20/2026";
         String report = "My name is " + name + " resident of the address " + address +
                 " and I confirm that I received the salary of: $" + salary + " on date " + dateOfSalaryPayment;
-        IO.println(report);
+        System.out.println(report);
     }
 }

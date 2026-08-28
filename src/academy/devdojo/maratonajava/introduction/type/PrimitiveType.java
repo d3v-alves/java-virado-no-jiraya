@@ -17,13 +17,13 @@ public class PrimitiveType {
     char charValue3 = 67;
     String stringValueReferenceType = "Hello World";
 
-    IO.println("The age is: " + number);
-    IO.println("The true value is: " + trueValue);
-    IO.println("The char value is: " + charValue);
-    IO.println("The charUnicode value is: " + charValue2);
-    IO.println("The charAscII value is: " + charValue3);
-    IO.println("The ageCastNarrowing value is: " + numberCastNarrowing);
-    IO.println("The stringValueReferenceType value is: " + stringValueReferenceType);
+    System.out.println("The age is: " + number);
+    System.out.println("The true value is: " + trueValue);
+    System.out.println("The char value is: " + charValue);
+    System.out.println("The charUnicode value is: " + charValue2);
+    System.out.println("The charAscII value is: " + charValue3);
+    System.out.println("The ageCastNarrowing value is: " + numberCastNarrowing);
+    System.out.println("The stringValueReferenceType value is: " + stringValueReferenceType);
 
     }
 }
