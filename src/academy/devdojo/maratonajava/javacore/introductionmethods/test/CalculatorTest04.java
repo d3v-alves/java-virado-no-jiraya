@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.introductionmethods.test;
 import academy.devdojo.maratonajava.javacore.introductionmethods.domain.Calculator;
 
 public class CalculatorTest04 {
-    static void main() {
+    public static void main(String[] args) {
         Calculator calculator = new Calculator();
         int a = 1;
         int b = 2;

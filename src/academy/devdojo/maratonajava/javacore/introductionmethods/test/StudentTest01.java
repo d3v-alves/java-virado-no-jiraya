@@ -4,7 +4,7 @@ import academy.devdojo.maratonajava.javacore.introductionmethods.domain.Student;
 import academy.devdojo.maratonajava.javacore.introductionmethods.domain.StudentPrinter;
 
 public class StudentTest01 {
-    static void main() {
+    public static void main(String[] args) {
         Student student01 = new Student();
         Student student02 = new Student();
         StudentPrinter printer = new StudentPrinter();
