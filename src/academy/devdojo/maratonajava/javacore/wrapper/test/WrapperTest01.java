@@ -13,11 +13,19 @@ public class WrapperTest01 {
 
         Byte byteW = 1;
         Short shortW = 1;
-        Integer intW = 1;
+        Integer intW = 1; // autoboxing
         Long longW = 10L;
         Float floatW = 10F;
         Double doubleW = 10D;
         Character charW = 'W';
         Boolean booleanW = false;
+
+        int i = intW; // unboxing
+        Integer intW2 = Integer.parseInt("1");
+        //Integer intw3 = new Integer("2");
+        boolean TruE= Boolean.parseBoolean("TruE");
+        System.out.println("TruE");
+
+
     }
 }
