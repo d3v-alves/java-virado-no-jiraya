@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.string.test;
 
 public class StringTest02 {
     public static void main(String[] args) {
-        String name = "Douglas";
+        String name = "   Douglas";
         String nums = "012345";
         System.out.println(name.charAt(0));
         System.out.println(name.length());
@@ -12,5 +12,6 @@ public class StringTest02 {
         System.out.println(nums.length());
         System.out.println(name.substring(3,nums.length()));
         System.out.println(nums.substring(3));
+        System.out.println(name.trim());
     }
 }
