@@ -22,5 +22,9 @@ public class LocalTest01 {
         System.out.println("França " +dateFormat2.format(calendar.getTime()));
         System.out.println("India " +dateFormat3.format(calendar.getTime()));
         System.out.println("Japan " +dateFormat4.format(calendar.getTime()));
+
+        System.out.println(localeItaly.getDisplayCountry(localeJapan));
+        System.out.println(localeFrance.getDisplayCountry(localeItaly));
+        System.out.println(localeIndia.getDisplayCountry(localeJapan));
     }
 }
