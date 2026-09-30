@@ -11,8 +11,14 @@ public class DateFormatTest01 {
         df[0] = DateFormat.getInstance();
         df[1] = DateFormat.getDateInstance();
         df[2] = DateFormat.getTimeInstance();
-        df[3] = DateFormat.getDateTimeInstance();
-        df[4] = DateFormat.getDateInstance();
+        df[3] = DateFormat.getDateInstance(DateFormat.SHORT);
+        df[4] = DateFormat.getDateInstance(DateFormat.MEDIUM);
+        df[5] = DateFormat.getDateInstance(DateFormat.LONG);
+        df[6] = DateFormat.getDateInstance(DateFormat.FULL);
 
+
+        for (DateFormat df1 : df) {
+            System.out.println(df1.format(calendar.getTime()));
+        }
     }
 }
