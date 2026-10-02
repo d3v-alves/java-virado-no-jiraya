@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.javacore.dates.test;
+package academy.devdojo.maratonajava.javacore.formatting.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class LocalTest01 {
+public class LocaleTest01 {
     public static void main(String[] args) {
         //
         Locale localeItaly = new Locale("it", "IT");
