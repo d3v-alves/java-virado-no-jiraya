@@ -14,8 +14,9 @@ public class NumberFormatTest01 {
         nfa[1] = NumberFormat.getInstance(localeBR);
         nfa[3] = NumberFormat.getInstance(localeFr);
         double value = 10_000.2130;
-        for (NumberFormat nf : nfa) {
-            System.out.println(nf.format(value));
+        for (NumberFormat numberFormat : nfa) {
+            numberFormat.setMaximumFractionDigits(2);
+            System.out.println(numberFormat.format(value));
         }
     }
 }
