@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.formatting.test;
 
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest01 {
@@ -13,10 +14,18 @@ public class NumberFormatTest01 {
         nfa[2] = NumberFormat.getInstance(localeJP);
         nfa[1] = NumberFormat.getInstance(localeBR);
         nfa[3] = NumberFormat.getInstance(localeFr);
-        double value = 10_000.2130;
+        double value = 1_000.2130;
         for (NumberFormat numberFormat : nfa) {
             numberFormat.setMaximumFractionDigits(2);
             System.out.println(numberFormat.format(value));
+        }
+
+        String stringValue = "1_000.2130";
+        try {
+            nfa[0].parse(stringValue);
+
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
     }
 }
